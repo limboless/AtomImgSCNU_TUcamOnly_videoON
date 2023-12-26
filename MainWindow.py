@@ -407,7 +407,7 @@ class MainWindow(QMainWindow):
             self.worker = Worker()
             self.thread = QThread()
             self.worker.moveToThread(self.thread)
-            self.worker.sig_video_mode_img5.connect(self.update_main_plot_win5)
+            self.worker.sig_video_mode_img.connect(self.update_main_plot_win)
             self.worker.sig_hardware_mode_img.connect(self.update_image_queue)
             self.worker.sig_video_mode_img2.connect(self.update_main_plot_win2)
             self.worker.sig_video_mode_img4.connect(self.update_main_plot_win4)

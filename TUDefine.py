@@ -480,7 +480,7 @@ m_fs.nSaveFmt = m_format.TUFMT_TIF.value
 
 m_frame.pBuffer     = 0;
 m_frame.ucFormatGet = m_frformat.TUFRM_FMT_RAW.value;
-m_frame.uiRsdSize   = 1; 
+m_frame.uiRsdSize   = 1;
 print(m_frame.pBuffer)
 print(m_frame.ucFormatGet)
 

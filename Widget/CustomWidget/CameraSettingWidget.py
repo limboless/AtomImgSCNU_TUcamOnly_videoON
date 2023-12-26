@@ -90,7 +90,7 @@ class CameraSetting(QWidget):
                     caminfo = open(config_path, 'r+')
                     caminfo.read()
                     caminfo.write("{},".format(camera_infos[m][0:-2]))
-                    caminfo.write("{},".format('newcamera'))
+                    caminfo.write("{},".format('newcamerab'))
                     caminfo.write("{}\n".format(10))
                     caminfo.close()
                 m = m + 1

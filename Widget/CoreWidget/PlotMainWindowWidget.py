@@ -254,7 +254,7 @@ class PlotMainWindow(QWidget):
         #将自定义窗口部件的大小设置为根据屏幕宽度计算得到的固定值
         self.setFixedSize(screen.width()*44/100,screen.width()*(9/16)*63/100) 
         # print(self.width(), self.height())
-
+        
     def change_HpeakOD(self, HpeakOD):
         self.img_label3.setText(str('%.3e' % HpeakOD))
 
@@ -288,7 +288,7 @@ class PlotMainWindow(QWidget):
             roisize = int(settings.widget_params["Analyse Data Setting"]["roisize"])
             self.roi = pg.ROI([300, 300], [roisize, roisize], maxBounds=QtCore.QRect(0, 0, self.data_shape[1], self.data_shape[0]))
             # self.roi.setPen(color=QColor(42, 130, 218), width=3)  # set roi width and color
-            self.roi.setPen(color=QColor(225, 225, 225), width=3)  # set roi width and color
+            self.roi.setPen(color=QColor(255, 255, 0), width=4)  # set roi width and color(225, 225, 225)浅灰色
 
             self.viewBox.addItem(self.roi)
             # make sure ROI is drawn above image
